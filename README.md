@@ -1,78 +1,61 @@
-<h2 align="center"><a href="https://t.me/bitfancy" target="_blank">Hi 👋, I'm a Blockchain Engineer, you can contact me👈🏻</a></h2>
+
+<h2 align="center"><a href="https://t.me/bitfancy" target="_blank">Oi 👋, eu gosto muito de assuntos referente a Blockchain, você pode me contatar 👈🏻</a></h2>
+
 # Solana MEV Bot
 
-Welcome to the **Solana MEV Bot**! This Rust-based bot is designed for executing Maximal Extractable Value (MEV) strategies on the Solana blockchain.
+Bem-vindo ao **Solana MEV Bot**! Este bot baseado em Rust foi projetado para executar estratégias de Maximal Extractable Value (MEV) na blockchain Solana.
 
-Ensure you have the following installed:
+🚀 **Este projeto é um fork do repositório original pertencente a** [BitFancy](https://github.com/BitFancy).  
 
-- **Rust**: Install Rust using rustup:
-  ```bash
-  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-  ```
-  
-- **Solana CLI**: Install by running:
-  ```bash
-  sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
-  ```
+Certifique-se de ter os seguintes itens instalados:
 
-### Installation
+- **Rust**: Instale o Rust usando rustup:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/BitFancy/Solana-MEV-Bot-Optimized.git
-   cd Solana-MEV-Bot-Optimized
-   ```
+- **Solana CLI**: Instale executando:
 
-2. Build the project:
-   ```bash
-   cargo build --release
-   ```
+### Instalação
 
-3. Configure your environment:
-   - Create a `.env` file in the root directory and add your Solana wallet private key and RPC link:
-     ```
-     SOLANA_WALLET_PRIVATE_KEY=YOUR_PRIVATE_KEY
-     DEFAULT_RPC=https://api.mainnet-beta.solana.com
-     ```
+1. Clone o repositório:
 
-## Running the Project
+2. Compile o projeto:
 
-To run the bot, use the following command:
+3. Configure seu ambiente:
+   - Crie um arquivo `.env` no diretório raiz e adicione sua chave privada da carteira Solana e o link RPC:
 
-```bash
-cargo run --release
-```
+## Executando o Projeto
 
-This command compiles your Rust project in release mode and starts the arbitrage bot with the latest configuration.
+Para executar o bot, use o seguinte comando:
 
-### Command-Line Arguments
+Este comando compila seu projeto Rust no modo release e inicia o bot de arbitragem com a configuração mais recente.
 
-You can pass various command-line arguments to customize the bot's behavior:
+### Argumentos de Linha de Comando
 
-- `--config <path>`: Specify a custom configuration file.
-- `--verbose`: Enable verbose logging for debugging purposes.
+Você pode passar vários argumentos de linha de comando para personalizar o comportamento do bot:
 
-Example:
-```bash
-cargo run --release -- --config config.toml --verbose
-```
+- `--config <path>`: Especifica um arquivo de configuração personalizado.
+- `--verbose`: Habilita logs detalhados para fins de depuração.
 
-## Usage
+Exemplo:
 
-Follow the prompts in the terminal to set up your trading parameters. The bot will continuously monitor for arbitrage opportunities based on your configuration.
+## Uso
 
-## Key Concepts
+Siga as instruções no terminal para definir seus parâmetros de negociação. O bot monitorará continuamente oportunidades de arbitragem com base na sua configuração.
+
+## Conceitos-Chave
 
 ### Flash Loans
 
-Flash loans allow you to borrow assets without collateral, provided that the borrowed amount is returned within the same transaction block. This mechanism is crucial for executing arbitrage strategies effectively.
+Flash loans permitem que você tome empréstimos de ativos sem necessidade de garantia, desde que o valor emprestado seja devolvido dentro do mesmo bloco de transação. Esse mecanismo é essencial para executar estratégias de arbitragem de forma eficaz.
 
-### Arbitrage Opportunities
+### Oportunidades de Arbitragem
 
-The bot continuously monitors price feeds across different exchanges to identify profitable trading opportunities. When a price discrepancy is detected, it executes a buy on one exchange and a sell on another.
+O bot monitora continuamente os feeds de preços em diferentes exchanges para identificar oportunidades de negociação lucrativas. Quando uma discrepância de preço é detectada, ele executa uma compra em uma exchange e uma venda em outra.
 
 ### Smart Contracts
 
-Smart contracts manage the flash loan execution, ensuring that all transactions are completed successfully within a single block.
+Os contratos inteligentes gerenciam a execução dos flash loans, garantindo que todas as transações sejam concluídas com sucesso dentro de um único bloco.
 
-##If you need assistant, please contact me <h3 align="center"> Telegram : <a href="https://t.me/bitfancy" target="_blank">here 👈🏻</a><br>Discord : @bitbanana717</h3>
+###⚠️ **Aviso Legal:** 
+
+O uso deste projeto é por sua conta e risco. Não nos responsabilizamos por quaisquer danos, perdas ou consequências resultantes de sua utilização. 
+
