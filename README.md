@@ -10,21 +10,41 @@ Bem-vindo ao **Solana MEV Bot**! Este bot baseado em Rust foi projetado para exe
 Certifique-se de ter os seguintes itens instalados:
 
 - **Rust**: Instale o Rust usando rustup:
+  ```bash
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  ```
 
 - **Solana CLI**: Instale executando:
+   ```bash
+  sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+  ```
 
 ### Instalação
 
 1. Clone o repositório:
+ ```bash
+   git clone https://github.com/BitFancy/Solana-MEV-Bot-Optimized.git
+   cd Solana-MEV-Bot-Optimized
+   ```
 
-2. Compile o projeto:
+3. Compile o projeto:
+  ```bash
+   cargo build --release
+   ```
 
-3. Configure seu ambiente:
+5. Configure seu ambiente:
    - Crie um arquivo `.env` no diretório raiz e adicione sua chave privada da carteira Solana e o link RPC:
+      ```
+     SOLANA_WALLET_PRIVATE_KEY=YOUR_PRIVATE_KEY
+     DEFAULT_RPC=https://api.mainnet-beta.solana.com
+     ```
 
 ## Executando o Projeto
 
 Para executar o bot, use o seguinte comando:
+```bash
+cargo run --release
+```
 
 Este comando compila seu projeto Rust no modo release e inicia o bot de arbitragem com a configuração mais recente.
 
@@ -36,6 +56,9 @@ Você pode passar vários argumentos de linha de comando para personalizar o com
 - `--verbose`: Habilita logs detalhados para fins de depuração.
 
 Exemplo:
+```bash
+cargo run --release -- --config config.toml --verbose
+```
 
 ## Uso
 
